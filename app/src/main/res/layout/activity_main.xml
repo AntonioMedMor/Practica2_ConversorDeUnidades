@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7E7E7E"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/TV_conversorText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:text="4 Conversores"
+        android:textColor="#D8D8D8"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TableLayout
+        android:id="@+id/tableLayout2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TV_conversorText">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:clipToPadding="false"
+            android:dividerPadding="10dp">
+
+            <Button
+                android:id="@+id/btn_Longitud"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:backgroundTint="#37000000"
+                android:onClick="vistaLongitud"
+                android:padding="30dp"
+                android:paddingLeft="0dp"
+                android:paddingTop="0dp"
+                android:paddingBottom="0dp"
+                android:shadowRadius="@dimen/material_emphasis_high_type"
+                android:text="Longitud"
+                app:cornerRadius="40dp"
+                app:icon="@drawable/ph_ruler"
+                app:iconGravity="top"
+                app:iconSize="30dp" />
+
+            <Button
+                android:id="@+id/btn_Peso"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:backgroundTint="#37000000"
+                android:onClick="vistaPeso"
+                android:padding="30dp"
+                android:shadowRadius="@dimen/material_emphasis_high_type"
+                android:text="Peso"
+                app:cornerRadius="40dp"
+                app:icon="@drawable/pajamas_weight"
+                app:iconGravity="top"
+                app:iconSize="30dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btn_Volumen"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"
+                android:backgroundTint="#37000000"
+                android:onClick="vistaVolumen"
+                android:padding="30dp"
+                android:shadowRadius="@dimen/material_emphasis_high_type"
+                android:text="Volumen"
+                app:cornerRadius="40dp"
+                app:icon="@drawable/system_uicons_cube"
+                app:iconGravity="top"
+                app:iconSize="30dp" />
+
+            <Button
+                android:id="@+id/btn_Temperatura"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:backgroundTint="#37000000"
+                android:onClick="vistaTemperatura"
+                android:padding="30dp"
+                android:shadowRadius="@dimen/material_emphasis_high_type"
+                android:text="Temperatura"
+                app:cornerRadius="40dp"
+                app:icon="@drawable/tabler_temperature"
+                app:iconGravity="top"
+                app:iconSize="30dp" />
+        </TableRow>
+    </TableLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
